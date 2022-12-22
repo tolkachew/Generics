@@ -6,13 +6,9 @@ public class TreeDemo {
         Tree<String> tree = new Tree<>("root");
         Tree.Node root = tree.getRoot();
 
-        Tree.Node node1 =
-                tree.new
-                        Node(root,"n1");
+        Tree.Node node1 = tree.new Node(root,"n1");
         root.addChild(node1);
-        root.addChild(
-                tree.new
-                        Node(root,"n2"));
+        root.addChild(tree.new Node(root,"n2"));
         root.preOrder(root);
 
         root.removeChild(node1);
